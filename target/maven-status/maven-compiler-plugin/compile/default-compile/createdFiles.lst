@@ -1,0 +1,17 @@
+com/wayne/jmx/demo/CheckMXBeanRunner.class
+com/wayne/jmx/demo/mbean/dynamicm/ddfd.class
+com/wayne/jmx/demo/mbean/mx/PaxiQ.class
+com/wayne/jmx/demo/PaxiClient.class
+com/wayne/jmx/demo/pmclient/MyCustomCollector.class
+com/wayne/jmx/demo/mbean/m/PaxiMBean.class
+com/wayne/jmx/demo/mbean/modelm/ModelMBeanUtils.class
+com/wayne/jmx/demo/mbean/mx/test/DataOrder.class
+com/wayne/jmx/demo/mbean/mx/test/DataIntegrationVolume.class
+com/wayne/jmx/demo/mbean/mx/PaxiQMXBean.class
+com/wayne/jmx/demo/mbean/mx/test/Book.class
+com/wayne/jmx/demo/mbean/m/Paxi.class
+com/wayne/jmx/demo/mbean/modelm/Hello.class
+com/wayne/jmx/demo/mbean/mx/test/DataIntegrationVolumeMXBean.class
+com/wayne/jmx/demo/mbean/mx/PaxiQueue.class
+com/wayne/jmx/demo/PaxiClientListener.class
+com/wayne/jmx/demo/JmxDemoApplication.class

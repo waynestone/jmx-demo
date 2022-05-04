@@ -1,0 +1,17 @@
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/JmxDemoApplication.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/m/PaxiMBean.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/PaxiQueue.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/PaxiQ.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/modelm/ModelMBeanUtils.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/CheckMXBeanRunner.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/dynamicm/ddfd.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/PaxiClient.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/m/Paxi.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/test/DataIntegrationVolumeMXBean.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/test/Book.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/PaxiQMXBean.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/modelm/Hello.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/pmclient/MyCustomCollector.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/test/DataIntegrationVolume.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/PaxiClientListener.java
+/Users/shitou/Documents/code/study/JAVAJMX/jmx-demo/src/main/java/com/wayne/jmx/demo/mbean/mx/test/DataOrder.java
