@@ -12,6 +12,7 @@ public class MyCustomCollector extends Collector {
     @Override
     public List<MetricFamilySamples> collect() {
 
+        //YourClass.processRequest();
         List<MetricFamilySamples> mfs = new ArrayList<MetricFamilySamples>();
         String metricName = "data_integration_volume";
         //MBeanServer ssssss= getMBeanServer();

@@ -4,6 +4,7 @@ package com.wayne.jmx.demo;
 import com.wayne.jmx.demo.mbean.mx.test.DataIntegrationVolume;
 import com.wayne.jmx.demo.pmclient.MyCustomCollector;
 import io.prometheus.client.CollectorRegistry;
+import io.prometheus.client.exporter.HTTPServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -98,6 +99,21 @@ public class CheckMXBeanRunner implements ApplicationRunner {
         }
 
 
+        if(IocContainer.containsEndPoint("prometheusEndpoint")){
+            CollectorRegistry registry=IocContainer.getBean(CollectorRegistry.class);
+
+        }
+        //
+
         new MyCustomCollector().register(collectorRegistry);
+
+        try {
+            //TODO 指标采集端口号
+            HTTPServer server1 = new HTTPServer.Builder()
+                    .withPort(9090)
+                    .build();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jmx-demo.iml" filepath="$PROJECT_DIR$/jmx-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../metric-producer/metric-producer.iml" filepath="$PROJECT_DIR$/../metric-producer/metric-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yammer-metrics/yammer-metrics.iml" filepath="$PROJECT_DIR$/../yammer-metrics/yammer-metrics.iml" />
     </modules>
   </component>
 </project>

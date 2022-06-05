@@ -1,0 +1,116 @@
+package com.wayne.jmx.demo.mbean.dynamicm;
+
+import com.wayne.jmx.demo.mbean.m.Person;
+
+import javax.management.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonDynamic implements DynamicMBean {
+    // Person对象
+    private Person person;
+    // 描述属性信息
+    private List<MBeanAttributeInfo> attributes = new ArrayList<MBeanAttributeInfo>();
+
+    // 描述构造器信息
+    private List<MBeanConstructorInfo> constructors =
+            new ArrayList<MBeanConstructorInfo>();
+
+    // 描述方法信息
+    private List<MBeanOperationInfo> operations = new ArrayList<MBeanOperationInfo>();
+    // 描述通知信息
+    private List<MBeanNotificationInfo> notifications =
+            new ArrayList<MBeanNotificationInfo>();
+    // MBeanInfo用于管理以上描述信息
+    private MBeanInfo mBeanInfo;
+
+    public PersonDynamic(Person person) {
+        this.person = person;
+        try {
+            init();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // 初始化方法
+    private void init() throws Exception {
+        //构建Person的属性、方法、构造器等信息
+        constructors.add(new MBeanConstructorInfo("PersonDynamic(String,Integer)" +
+                "构造器", this.person.getClass().getConstructors()[0]));
+        attributes.add(new MBeanAttributeInfo("name", "java.lang.String", "姓名",
+                true, false, false));
+        attributes.add(new MBeanAttributeInfo("age", "int", "年龄",
+                true, false, false));
+        operations.add(new MBeanOperationInfo("sayHello()方法.", this.person
+                .getClass().getMethod("sayHello", new Class[]{String.class})));
+        // 创建一个MBeanInfo对象
+        this.mBeanInfo = new MBeanInfo(this.getClass().getName(),
+                "PersonDynamic",
+                attributes.toArray(new MBeanAttributeInfo[attributes.size()]),
+                constructors.toArray(new MBeanConstructorInfo[constructors.size()]),
+                operations.toArray(new MBeanOperationInfo[operations.size()]),
+                notifications.toArray(new MBeanNotificationInfo[notifications.size()])
+        );
+    }
+
+    @Override
+    public Object getAttribute(String attribute) throws AttributeNotFoundException,
+            MBeanException, ReflectionException { // 获取person对象属性值
+        if (attribute.equals("name")) {
+            return this.person.getName();
+        } else if (attribute.equals("age")) {
+            return this.person.getAge();
+        }
+        return null;
+    }
+
+    @Override
+    public void setAttribute(Attribute attribute) throws AttributeNotFoundException, InvalidAttributeValueException, MBeanException, ReflectionException {
+
+    }
+
+    @Override
+    public AttributeList getAttributes(String[] attributes) {
+        // 通过属性名获取一个属性对象列表
+        if (attributes == null || attributes.length == 0) {
+            return null;
+        }
+        try {
+            AttributeList attrList = new AttributeList();
+            for (String attrName : attributes) {
+                Object obj = this.getAttribute(attrName);
+                Attribute attribute = new Attribute(attrName, obj);
+                attrList.add(attribute);
+            }
+            return attrList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public AttributeList setAttributes(AttributeList attributes) {
+        return null;
+    }
+
+    @Override
+    public MBeanInfo getMBeanInfo() { // 获取MBeanInfo
+        return mBeanInfo;
+    }
+    @Override
+    public Object invoke(String actionName, Object[] params, String[] signature)
+            throws MBeanException, ReflectionException {
+        // 调用Person里面指定的方法
+        if (actionName.equals("sayHello")) {
+            return this.person.sayHello(params[0].toString());
+        }
+        return null;
+    }
+    // setAttribute()方法和setAttributes()也是DynamicMBean接口需要实现的方法，
+    //        // 本例为空实现，代码不再贴出来了
+    //    }
+
+
+}

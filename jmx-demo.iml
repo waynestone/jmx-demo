@@ -92,7 +92,6 @@
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-registry-prometheus:1.8.5" level="project" />
-    <orderEntry type="library" name="Maven: io.prometheus:simpleclient_common:0.12.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.6.7" level="project" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient:0.15.0" level="project" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient_tracer_otel:0.12.0" level="project" />
@@ -100,5 +99,6 @@
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient_tracer_otel_agent:0.12.0" level="project" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient_hotspot:0.15.0" level="project" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient_httpserver:0.15.0" level="project" />
+    <orderEntry type="library" name="Maven: io.prometheus:simpleclient_common:0.12.0" level="project" />
   </component>
 </module>

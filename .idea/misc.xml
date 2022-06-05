@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../yammer-metrics/pom.xml" />
+        <option value="$PROJECT_DIR$/../metric-producer/pom.xml" />
       </list>
     </option>
   </component>

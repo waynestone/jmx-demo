@@ -10,8 +10,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../metric-producer" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -24,6 +40,7 @@
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=local" />
   </component>
   <component name="ProjectId" id="28gGXtFf71dSZyneG1O5Vqv7Rhn" />
@@ -33,14 +50,32 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wayne.jmx.demo" />
+      <recent name="com.wayne.jmx.demo.actuator" />
+      <recent name="com.wayne.jmx.demo.mbean.m" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MetricProducerApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -48,8 +83,89 @@
       <module />
       <method />
     </configuration>
+    <configuration name="CounterMain$CounterBuilderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.jmx.demo.micrometer.CounterMain$CounterBuilderMain" />
+      <module name="jmx-demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.jmx.demo.micrometer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CounterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.jmx.demo.micrometer.CounterMain" />
+      <module name="jmx-demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.jmx.demo.micrometer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionCounterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.jmx.demo.micrometer.FunctionCounterMain" />
+      <module name="jmx-demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.jmx.demo.micrometer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearnCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.yammer.metrics.LearnCounter" />
+      <module name="yammer-metrics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.yammer.metrics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.jmx.demo.micrometer.Test" />
+      <module name="jmx-demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.jmx.demo.micrometer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,6 +180,20 @@
     <configuration name="JmxDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="jmx-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wayne.jmx.demo.JmxDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="metric-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wayne.metric.producer.MetricProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YammerMetricsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yammer-metrics" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wayne.yammer.metrics.YammerMetricsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +216,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CounterMain" />
+        <item itemvalue="Application.FunctionCounterMain" />
+        <item itemvalue="Application.CounterMain$CounterBuilderMain" />
+        <item itemvalue="Application.LearnCounter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,11 +234,179 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651630858267</updated>
-      <workItem from="1651630859657" duration="13000" />
+      <workItem from="1651630859657" duration="3314000" />
+      <workItem from="1651976238405" duration="3320000" />
+      <workItem from="1651982080550" duration="7378000" />
+      <workItem from="1652455331432" duration="97000" />
+      <workItem from="1652495932988" duration="65458000" />
+      <workItem from="1653114153703" duration="41000" />
+      <workItem from="1653114681830" duration="32535000" />
+      <workItem from="1653292917167" duration="10462000" />
+      <workItem from="1653405960112" duration="3263000" />
+      <workItem from="1653662559573" duration="15207000" />
+      <workItem from="1654091773510" duration="46000" />
+      <workItem from="1654238315466" duration="1982000" />
+      <workItem from="1654244461053" duration="13444000" />
+      <workItem from="1654352813600" duration="1647000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.6.7/spring-boot-actuator-2.6.7.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.class</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.6.7/spring-boot-actuator-2.6.7.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.class</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.6.7/spring-boot-actuator-2.6.7.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.class</url>
+          <line>70</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.6.7/spring-boot-actuator-2.6.7.jar!/org/springframework/boot/actuate/metrics/MetricsEndpoint.class</url>
+          <line>93</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/io/micrometer/micrometer-core/1.8.5/micrometer-core-1.8.5.jar!/io/micrometer/core/instrument/search/Search.class</url>
+          <line>201</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/io/micrometer/micrometer-core/1.8.5/micrometer-core-1.8.5.jar!/io/micrometer/core/instrument/binder/tomcat/TomcatMetrics.class</url>
+          <line>288</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/io/micrometer/micrometer-core/1.8.5/micrometer-core-1.8.5.jar!/io/micrometer/core/instrument/binder/tomcat/TomcatMetrics.class</url>
+          <line>296</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/io/micrometer/micrometer-core/1.8.5/micrometer-core-1.8.5.jar!/io/micrometer/core/instrument/binder/tomcat/TomcatMetrics.class</url>
+          <line>140</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-servlet/2.1.5/metrics-servlet-2.1.5.jar!/com/yammer/metrics/reporting/AdminServlet.class</url>
+          <line>65</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-servlet/2.1.5/metrics-servlet-2.1.5.jar!/com/yammer/metrics/reporting/AdminServlet.class</url>
+          <line>36</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-servlet/2.1.5/metrics-servlet-2.1.5.jar!/com/yammer/metrics/reporting/AdminServlet.class</url>
+          <line>40</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-servlet/2.1.5/metrics-servlet-2.1.5.jar!/com/yammer/metrics/reporting/JmxReporter.class</url>
+          <line>38</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-core/2.1.5/metrics-core-2.1.5.jar!/com/yammer/metrics/core/Counter.class</url>
+          <line>40</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-servlet/2.1.5/metrics-servlet-2.1.5.jar!/com/yammer/metrics/reporting/ConsoleReporter.class</url>
+          <line>114</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/yammer/metrics/metrics-core/2.1.5/metrics-core-2.1.5.jar!/com/yammer/metrics/core/MetricsRegistry.class</url>
+          <line>182</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/util/Map.java</url>
+          <line>1092</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/CounterMain.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/CounterMain.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/FunctionCounterMain.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/FunctionCounterMain.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/actuator/CustomMetrics.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/Test.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/micrometer/Test.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.1.3.RELEASE/spring-boot-actuator-2.1.3.RELEASE.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcMetricsFilter.class</url>
+          <line>100</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator/2.1.3.RELEASE/spring-boot-actuator-2.1.3.RELEASE.jar!/org/springframework/boot/actuate/metrics/web/servlet/WebMvcMetricsFilter.class</url>
+          <line>102</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/com/glodon/platform/gdc-metricclient/1.0.0-SNAPSHOT/gdc-metricclient-1.0.0-SNAPSHOT.jar!/com/glodon/platform/gdc/metricclient/core/GDCCustomCollection.class</url>
+          <line>71</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/io/micrometer/micrometer-core/1.8.5/micrometer-core-1.8.5.jar!/io/micrometer/core/instrument/binder/jvm/ExecutorServiceMetrics.class</url>
+          <line>114</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/maven/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.6.7/spring-boot-actuator-autoconfigure-2.6.7.jar!/org/springframework/boot/actuate/autoconfigure/metrics/task/TaskExecutorMetricsAutoConfiguration.class</url>
+          <line>37</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="this.children.values()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

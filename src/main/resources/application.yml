@@ -18,7 +18,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"  # info, health,prometheus,metrics
+        include: "*"  # "info","health","prometheus","metrics"
       base-path: /actuator # 打开 Prometheus 的 Web 访问 Path
   metrics:
     # 下面选项建议打开，以监控 http 请求的 P99/P95 等，具体的时间分布可以根据实际情况设置

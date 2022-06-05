@@ -1,5 +1,6 @@
 package com.wayne.jmx.demo.mbean.m;
 
+
 public class Paxi implements PaxiMBean {
     @Override
     public void sayHi() {

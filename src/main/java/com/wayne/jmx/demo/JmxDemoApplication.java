@@ -1,9 +1,11 @@
 package com.wayne.jmx.demo;
 
 import com.wayne.jmx.demo.mbean.modelm.ModelMBeanUtils;
+import io.micrometer.core.instrument.Metrics;
+import io.prometheus.client.CollectorRegistry;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import sun.management.ManagementFactoryHelper;
+import org.springframework.context.annotation.Bean;
 
 import javax.management.*;
 import javax.management.modelmbean.RequiredModelMBean;
@@ -70,6 +72,15 @@ public class JmxDemoApplication {
 //        System.out.println("....................server start....................");
         //==============================end============
 
+
+//        PrometheusTimer
+
+
     }
+
+//    @Bean
+//    public CollectorRegistry collectorRegistry(){
+//        return CollectorRegistry.defaultRegistry;
+//    }
 
 }
