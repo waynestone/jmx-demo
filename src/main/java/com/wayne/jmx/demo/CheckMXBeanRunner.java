@@ -105,7 +105,7 @@ public class CheckMXBeanRunner implements ApplicationRunner {
         }
         //
 
-        new MyCustomCollector().register(collectorRegistry);
+        new MyCustomCollector().register();
 
         try {
             //TODO 指标采集端口号
