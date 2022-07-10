@@ -13,7 +13,16 @@ import javax.servlet.http.HttpServletResponse;
 /*
         http://localhost:8080/test/a1
 http://localhost:8080/actuator/prometheus
+http://localhost:9090/
+collect:395, Summary (io.prometheus.client)
+collect:46, Collector (io.prometheus.client)
+findNextElement:197, CollectorRegistry$MetricFamilySamplesEnumeration (io.prometheus.client)
+<init>:162, CollectorRegistry$MetricFamilySamplesEnumeration (io.prometheus.client)
+<init>:183, CollectorRegistry$MetricFamilySamplesEnumeration (io.prometheus.client)
+metricFamilySamples:129, CollectorRegistry (io.prometheus.client)
+handle:100, HTTPServer$HTTPMetricHandler (io.prometheus.client.exporter) this.registry.metricFamilySamples()
  */
+//复杂类型Summary和Histogram  ---- 在业务代码中进行监控埋点
 @Component
 public class PrometheusMetricsInterceptor extends HandlerInterceptorAdapter {
     @Autowired
@@ -24,8 +33,8 @@ public class PrometheusMetricsInterceptor extends HandlerInterceptorAdapter {
             .register();
     static final Summary requestLatency = Summary.build()
             .name("io_namespace_http_requests_latency_seconds_summary")
-            .quantile(0.5, 1)
-            .quantile(0.9, 0.01) //TODO  啥意思？？？？
+            .quantile(0.5, 1) //quantile=0.5 百分之50的操作耗时，中分位数
+            .quantile(0.9, 0.01) //9 分位数
             .labelNames("path", "method", "code")
             .help("Request latency in seconds.").register();
 

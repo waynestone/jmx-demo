@@ -251,7 +251,7 @@
       <workItem from="1654238315466" duration="1982000" />
       <workItem from="1654244461053" duration="13444000" />
       <workItem from="1654352813600" duration="9399000" />
-      <workItem from="1654930087177" duration="17591000" />
+      <workItem from="1654930087177" duration="52791000" />
     </task>
     <servers />
   </component>
@@ -400,16 +400,6 @@
           <url>jar://$USER_HOME$/maven/repository/org/springframework/spring-beans/5.2.1.RELEASE/spring-beans-5.2.1.RELEASE.jar!/org/springframework/beans/factory/support/SimpleBeanDefinitionRegistry.class</url>
           <line>23</line>
           <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/wayne/jmx/demo/pmclient/MyCustomCollector.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="219" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/maven/repository/io/prometheus/simpleclient/0.15.0/simpleclient-0.15.0.jar!/io/prometheus/client/Summary.class</url>
-          <line>70</line>
-          <option name="timeStamp" value="223" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

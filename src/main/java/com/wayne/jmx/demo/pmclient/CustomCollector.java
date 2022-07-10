@@ -8,7 +8,7 @@ import javax.management.ObjectName;
 import java.lang.management.ManagementFactory;
 import java.util.*;
 
-public class MyCustomCollector extends Collector {
+public class CustomCollector extends Collector {
     @Override
     public List<MetricFamilySamples> collect() {
 

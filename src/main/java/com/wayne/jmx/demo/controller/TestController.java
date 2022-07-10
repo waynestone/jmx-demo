@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.UUID;
 
 /**
@@ -28,6 +29,13 @@ public class TestController {
 //        int amount = random.nextInt(100);
 //        // 统计金额
 //        monitor.getAmountSum().record(amount);
+
+        try{
+            Random random=new Random();
+            Thread.sleep(random.nextInt(100));
+        }catch (Exception ex){
+
+        }
 
         return "a1,ok, " + System.currentTimeMillis();
     }
